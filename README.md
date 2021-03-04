@@ -1,5 +1,17 @@
 # Team Agreement
 
+## Team Members
+
+1. Omar Ewies
+
+2. Mousa Sabah
+
+3. Anwar Abbass
+
+4. Saja Ababneh
+
+5. Nouf Alshoubaki
+
 ## Conflict Plan
 
 As we are working as a team conflicts between team members might happen, we agreed that all of us should discuss the conflict and we have listen to each other and respect each other point of view.
