@@ -115,6 +115,7 @@ function next(){
 
       let x = answersArray[i]/summarray( answersArray );
       //
+      // eslint-disable-next-line no-undef
       Section.all[sectionNumber].userAnswer[i] = ( x * 10 );
     }
 
