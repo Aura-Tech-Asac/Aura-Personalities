@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aura Quiz</title>
-    <link rel="stylesheet" href="./css/stylesheet.css">
+    <!-- <link rel="stylesheet" href="./css/stylesheet.css"> -->
     <link rel="stylesheet" href="./css/quiz.css">
-    <link rel="stylesheet" href="./css/reset.css">
+    
 </head>
 
 <body>
@@ -32,10 +32,329 @@
 
     </header>
 
-    <body>
-
-
-    </body>
+    <main>
+        <div class='quizTips'>
+        
+            <div class="tips">
+               <img src="https://via.placeholder.com/100x100" alt="" srcset=""  class="tipsImage">
+               <p class="tipsP">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet accusamus consectetur et numquam velit consequuntur sequi nulla voluptatem illo dolore, asperiores fugit ipsum eius! Id pariatur rem aperiam est odit?</p>
+            </div> 
+            <div class="tips">
+                <img src="https://via.placeholder.com/100x100" alt="" srcset=""  class="tipsImage">
+                <p class="tipsP">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet accusamus consectetur et numquam velit consequuntur sequi nulla voluptatem illo dolore, asperiores fugit ipsum eius! Id pariatur rem aperiam est odit?</p>
+             </div>
+            <div class="tips">
+                <img src="https://via.placeholder.com/100x100" alt="" srcset=""  class="tipsImage">
+                <p class="tipsP">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet accusamus consectetur et numquam velit consequuntur sequi nulla voluptatem illo dolore, asperiores fugit ipsum eius! Id pariatur rem aperiam est odit?</p>
+             </div>
+        
+        </div>
+        <div class="barSection">
+            <p id = "completed_text"></p>
+            
+            <div class="completedBar">
+                <div class="progress"></div>
+            </div>
+        
+        </div>
+        
+        <div>
+            
+            <form action="">
+                <fieldset>
+                
+                <div class="sectionIdea">
+                    <h1 class="sectionHeader">  </h1>
+                </div>
+            <div class="sectionDiv">
+               
+                <input type="checkbox" name="checkA" id="checkA1" class="single" onclick="showMe(event);"  />
+                <label for="checkA1" class="optionLabel"></label>
+                <div class="rating-system1" id ="ratingA1">
+            
+        
+               
+        
+                    <input type="radio" name='rateA1' id="starA10a"value="10"/>
+                    <label for="starA10a"></label>
+                    <input type="radio" name='rateA1' id="starA9a" value="9"/>
+                    <label for="starA9a"></label>
+                    <input type="radio" name='rateA1' id="starA8a" value="8"/>
+                    <label for="starA8a"></label>
+                    <input type="radio" name='rateA1' id="starA7a" value="7"/>
+                    <label for="starA7a"></label>
+                    <input type="radio" name='rateA1' id="starA6a" value="6"/>
+                    <label for="starA6a"></label> 
+                    <input type="radio" name='rateA1' id="starA5a" value="5"/>
+                    <label for="starA5a"></label>          
+                    <input type="radio" name='rateA1' id="starA4a" value="4"/>
+                    <label for="starA4a"></label>          
+                    <input type="radio" name='rateA1' id="starA3a" value="3"/>
+                    <label for="starA3a"></label>           
+                    <input type="radio" name='rateA1' id="starA2a" value="2"/>
+                    <label for="starA2a"></label>          
+                    <input type="radio" name='rateA1' id="starA1a" value="1"/>
+                    <label for="starA1a"></label>
+                  
+             
+                  </div> 
+                
+                <input type="checkbox" name="checkA" id="checkA2" class="single" onclick="showMe(event);"/>
+                <label for="checkA2" class="optionLabel"></label>
+                <div class="rating-system1" id ="ratingA2">
+                    
+                        
+        
+               
+        
+                    <input type="radio" name='rateA2' id="starA10b"value="10"/>
+                    <label for="starA10b"></label>
+                    <input type="radio" name='rateA2' id="starA9b" value="9"/>
+                    <label for="starA9b"></label>
+                    <input type="radio" name='rateA2' id="starA8b" value="8"/>
+                    <label for="starA8b"></label>
+                    <input type="radio" name='rateA2' id="starA7b" value="7"/>
+                    <label for="starA7b"></label>
+                    <input type="radio" name='rateA2' id="star6b" value="6"/>
+                    <label for="star6b"></label> 
+                    <input type="radio" name='rateA2' id="star5b" value="5"/>
+                    <label for="star5b"></label>
+                  
+                    <input type="radio" name='rateA2' id="star4b" value="4"/>
+                    <label for="star4b"></label>
+                  
+                    <input type="radio" name='rateA2' id="star3b" value="3"/>
+                    <label for="star3b"></label>
+                   
+                    <input type="radio" name='rateA2' id="star2b" value="2"/>
+                    <label for="star2b"></label>
+                  
+                    <input type="radio" name='rateA2' id="star1b" value="1"/>
+                    <label for="star1b"></label>
+                  
+            </div>
+                <input type="checkbox" name="checkA" id="checkA3" class="single" onclick="showMe(event);"/>
+                <label for="checkA3" class="optionLabel"></label>
+                <div class="rating-system1" id ="ratingA3">
+                           
+                        
+        
+               
+        
+                    <input type="radio" name='rateA3' id="star10c"value="10"/>
+                    <label for="star10c"></label>
+                    <input type="radio" name='rateA3' id="star9c" value="9"/>
+                    <label for="star9c"></label>
+                    <input type="radio" name='rateA3' id="star8c" value="8"/>
+                    <label for="star8c"></label>
+                    <input type="radio" name='rateA3' id="star7c" value="7"/>
+                    <label for="star7c"></label>
+                    <input type="radio" name='rateA3' id="star6c" value="6"/>
+                    <label for="star6c"></label> 
+                    <input type="radio" name='rateA3' id="star5c" value="5"/>
+                    <label for="star5c"></label>
+                  
+                    <input type="radio" name='rateA3' id="star4c" value="4"/>
+                    <label for="star4c"></label>
+                  
+                    <input type="radio" name='rateA3' id="star3c" value="3"/>
+                    <label for="star3c"></label>
+                   
+                    <input type="radio" name='rateA3' id="star2c" value="2"/>
+                    <label for="star2c"></label>
+                  
+                    <input type="radio" name='rateA3' id="star1c" value="1"/>
+                    <label for="star1c"></label>
+                  
+            </div>
+                <input type="checkbox" name="checkA" id="checkA4" class="single" onclick="showMe(event);"/>
+                <label for="checkA4" class="optionLabel"></label>
+                <div class="rating-system1" id ="ratingA4">
+                           
+                        
+        
+               
+        
+                    <input type="radio" name='rateA4' id="star10d"value="10"/>
+                    <label for="star10d"></label>
+                    <input type="radio" name='rateA4' id="star9d" value="9"/>
+                    <label for="star9d"></label>
+                    <input type="radio" name='rateA4' id="star8d" value="8"/>
+                    <label for="star8d"></label>
+                    <input type="radio" name='rateA4' id="star7d" value="7"/>
+                    <label for="star7d"></label>
+                    <input type="radio" name='rateA4' id="star6d" value="6"/>
+                    <label for="star6d"></label> 
+                    <input type="radio" name='rateA4' id="star5d" value="5"/>
+                    <label for="star5d"></label>
+                  
+                    <input type="radio" name='rateA4' id="star4d" value="4"/>
+                    <label for="star4d"></label>
+                  
+                    <input type="radio" name='rateA4' id="star3d" value="3"/>
+                    <label for="star3d"></label>
+                   
+                    <input type="radio" name='rateA4' id="star2d" value="2"/>
+                    <label for="star2d"></label>
+                  
+                    <input type="radio" name='rateA4' id="star1d" value="1"/>
+                    <label for="star1d"></label>
+                  
+            </div>
+                <input type="checkbox" name="checkA" id="checkA5" class="single" onclick="showMe(event);"/>
+                <label for="checkA5" class="optionLabel"></label>
+                <div class="rating-system1" id ="ratingA5">
+                           
+                        
+        
+               
+        
+                    <input type="radio" name='rateA5' id="star10e"value="10"/>
+                    <label for="star10e"></label>
+                    <input type="radio" name='rateA5' id="star9e" value="9"/>
+                    <label for="star9e"></label>
+                    <input type="radio" name='rateA5' id="star8e" value="8"/>
+                    <label for="star8e"></label>
+                    <input type="radio" name='rateA5' id="star7e" value="7"/>
+                    <label for="star7e"></label>
+                    <input type="radio" name='rateA5' id="star6e" value="6"/>
+                    <label for="star6e"></label> 
+                    <input type="radio" name='rateA5' id="star5e" value="5"/>
+                    <label for="star5e"></label>
+                  
+                    <input type="radio" name='rateA5' id="star4e" value="4"/>
+                    <label for="star4e"></label>
+                  
+                    <input type="radio" name='rateA5' id="star3e" value="3"/>
+                    <label for="star3e"></label>
+                   
+                    <input type="radio" name='rateA5' id="star2e" value="2"/>
+                    <label for="star2e"></label>
+                  
+                    <input type="radio" name='rateA5' id="star1e" value="1"/>
+                    <label for="star1e"></label>
+                  
+            </div>
+                <input type="checkbox" name="checkA" id="checkA6" class="single" onclick="showMe(event);"/>
+                <label for="checkA6" class="optionLabel"></label>
+                <div class="rating-system1" id ="ratingA6">
+                           
+                        
+        
+               
+        
+                    <input type="radio" name='rateA6' id="star10f"value="10"/>
+                    <label for="star10f"></label>
+                    <input type="radio" name='rateA6' id="star9f" value="9"/>
+                    <label for="star9f"></label>
+                    <input type="radio" name='rateA6' id="star8f" value="8"/>
+                    <label for="star8f"></label>
+                    <input type="radio" name='rateA6' id="star7f" value="7"/>
+                    <label for="star7f"></label>
+                    <input type="radio" name='rateA6' id="star6f" value="6"/>
+                    <label for="star6f"></label> 
+                    <input type="radio" name='rateA6' id="star5f" value="5"/>
+                    <label for="star5f"></label>
+                  
+                    <input type="radio" name='rateA6' id="star4f" value="4"/>
+                    <label for="star4f"></label>
+                  
+                    <input type="radio" name='rateA6' id="star3f" value="3"/>
+                    <label for="star3f"></label>
+                   
+                    <input type="radio" name='rateA6' id="star2f" value="2"/>
+                    <label for="star2f"></label>
+                  
+                    <input type="radio" name='rateA6' id="star1f" value="1"/>
+                    <label for="star1f"></label>
+                  
+            </div>
+                <input type="checkbox" name="checkA" id="checkA7" class="single" onclick="showMe(event);"/>
+                <label for="checkA7" class="optionLabel"></label>
+                <div class="rating-system1" id ="ratingA7">
+                           
+                        
+        
+               
+        
+                    <input type="radio" name='rateA7' id="star10g"value="10"/>
+                    <label for="star10g"></label>
+                    <input type="radio" name='rateA7' id="star9g" value="9"/>
+                    <label for="star9g"></label>
+                    <input type="radio" name='rateA7' id="star8g" value="8"/>
+                    <label for="star8g"></label>
+                    <input type="radio" name='rateA7' id="star7g" value="7"/>
+                    <label for="star7g"></label>
+                    <input type="radio" name='rateA7' id="star6g" value="6"/>
+                    <label for="star6g"></label> 
+                    <input type="radio" name='rateA7' id="star5g" value="5"/>
+                    <label for="star5g"></label>
+                  
+                    <input type="radio" name='rateA7' id="star4g" value="4"/>
+                    <label for="star4g"></label>
+                  
+                    <input type="radio" name='rateA7' id="star3g" value="3"/>
+                    <label for="star3g"></label>
+                   
+                    <input type="radio" name='rateA7' id="star2g" value="2"/>
+                    <label for="star2g"></label>
+                  
+                    <input type="radio" name='rateA7' id="star1g" value="1"/>
+                    <label for="star1g"></label>
+                  
+            </div>
+            <input type="checkbox" name="checkA" id="checkA8" class="single" onclick="showMe(event);"/>
+            <label for="checkA8" class="optionLabel"></label>
+            <div class="rating-system1" id ="ratingA8">
+                           
+                        
+        
+               
+        
+                <input type="radio" name='rateA8' id="star10h"value="10"/>
+                <label for="star10h"></label>
+                <input type="radio" name='rateA8' id="star9h" value="9"/>
+                <label for="star9h"></label>
+                <input type="radio" name='rateA8' id="star8h" value="8"/>
+                <label for="star8h"></label>
+                <input type="radio" name='rateA8' id="star7h" value="7"/>
+                <label for="star7h"></label>
+                <input type="radio" name='rateA8' id="star6h" value="6"/>
+                <label for="star6h"></label> 
+                <input type="radio" name='rateA8' id="star5h" value="5"/>
+                <label for="star5h"></label>
+              
+                <input type="radio" name='rateA8' id="star4h" value="4"/>
+                <label for="star4h"></label>
+              
+                <input type="radio" name='rateA8' id="star3h" value="3"/>
+                <label for="star3h"></label>
+               
+                <input type="radio" name='rateA8' id="star2h" value="2"/>
+                <label for="star2h"></label>
+              
+                <input type="radio" name='rateA8' id="star1h" value="1"/>
+                <label for="star1h"></label>
+              
+        </div>
+            </div>
+            
+        <div class='warningDiv'>   <p  id="waning_P">WARNING</p>           </div>
+            <button type="button" onclick="next(); " id='nextButton'>Next </button>
+        </fieldset>
+        
+        </form>
+        <div>
+            
+        </div>
+        </div>
+        
+        
+        
+        
+        
+        
+           </main> 
 
     <footer>
 
