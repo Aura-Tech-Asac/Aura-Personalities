@@ -50,7 +50,7 @@
  main .person {
     font-size: large;
     text-transform: capitalize;
-    color: #4FD39E;
+    color:  #8F759F;
 }
 main .finished{
     font-size: large;
@@ -80,13 +80,13 @@ main .company{
     margin-left: 480px;
 }
 .imgg11{
-    width: 150px;
+    width: 215px;
     height: 300px;
     margin-right: 100px;
     border-radius: 20%;
 }
 .imgg21{
-    width: 200px;
+    width: 215px;
     height: 300px;
     border-radius: 20%;
     margin-left:20px;
@@ -95,7 +95,7 @@ main .company{
     float: right;
     margin-top: 136px;
     font-size: 40px;
-    color: #4FD39E;
+    color:  #8F759F;
     font-weight: bolder;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-right: 35px;
