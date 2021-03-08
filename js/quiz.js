@@ -109,7 +109,7 @@ function next() {
     let completedBar = document.querySelector( 'div.progress' );
     completedBar.style.width = progress + '%';
     let textBar = document.getElementById( 'completed_text' );
-    textBar.textContent = `${Math.ceil( progress )} %`;
+    textBar.textContent = `${Math.round( progress )} %`;
 
     for ( let i = 0; i < 8; i++ ) {
 

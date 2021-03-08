@@ -21,22 +21,32 @@ function result() {
     }
   }
   for( let i in personalityAll ){
-    personalityAll[i].percentege = ( personalityAll[i].value * 100 )/70;
+    personalityAll[i].percentege = Math.round( ( personalityAll[i].value * 100 )/70 );
   }
 }
 result();
 localStorage.setItem( 'resultpersonality', JSON.stringify( personalityAll ) );
 function renderResult(){
   for( let i in personalityAll ){
-    let BarTitleElement= document.getElementById( `p${i+1}_name` );
-    BarTitleElement.textContent=personalityAll[i].name;
+    let x = 'p' +i+1 +'_name';
+    console.log( typeof( x ) );
+    let y = `p${x}_bar`;
+    let z = `p${x}_percent_text`;
+    let BarTitleElement= document.querySelectorAll( '.barTitle p' );
 
-    let percentageBarElement= document.getElementById( `p${i+1}_bar` );
-    percentageBarElement.style.width=`${personalityAll[i].percentege}%`;
+    BarTitleElement[i].textContent=personalityAll[i].name;
 
-    let textPecentageElement= document.getElementById( `p${i+1}_percent_text` );
-    textPecentageElement.textContent=`${personalityAll[i].percentege} %`;
+    let percentageBarElement= document.querySelectorAll( '.personalityPercent' );
+    console.log( percentageBarElement );
+    percentageBarElement[i].style.width=`${personalityAll[i].percentege }%`;
+
+    let textPecentageElement= document.querySelectorAll( '.percent p' );
+    textPecentageElement[i].textContent=`${personalityAll[i].percentege} %`;
 
   }
 }
 renderResult();
+
+
+// let BarTitleElement= document.getElementById('p1_bar');
+//     BarTitleElement.textContent=personalityAll[0].name;
