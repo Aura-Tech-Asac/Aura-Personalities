@@ -40,6 +40,7 @@ function removeCard( event ){
 
 }
 // Creat Obejcts
+let orderArray = [5,7,4,2,8,3,1,6,1,2,5,6,3,7,4,8,2,8,3,4,7,5,6,1,7,3,6,1,4,8,5,2,6,1,7,3,5,2,8,4,4,7,2,8,6,1,3,5,3,6,8,5,1,4,2,7];
 let optionsText = ['I think I can quickly see and take advantage of new opportunities.',
   'I can work well with a very wide range of people.',
   'Producing ideas is one of my natural assets.',
@@ -132,16 +133,15 @@ let zeroArray = new Array( 8 ).fill( 0 );
 let index = 0;
 for ( let i in SectionTitle ) {
   let tempArray = [];
+  let tempOrder=[];
   for ( let j in zeroArray ) {
     tempArray.push( optionsText[index] );
+    tempOrder.push(orderArray[index]);
     index++;
   }
-  const SectionObject = new Section( i + 1, SectionTitle[i], zeroArray, tempArray, 0 );
+  const SectionObject = new Section( i + 1, SectionTitle[i], zeroArray, tempArray, tempOrder );
 }
-console.log( Section.all );
-localStorage.setItem( 'Personality', JSON.stringify( Personality.all ) );
-localStorage.setItem( 'Section', JSON.stringify( Section.all ) );
-// *********************************************************************
+console.log( [5,[5,1,2]] );
 
 
 

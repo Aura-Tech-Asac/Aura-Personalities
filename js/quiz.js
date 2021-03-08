@@ -219,6 +219,9 @@ function checkAnswers(){
 
 }
 function finalResult(){
+  //update
+  localStorage.setItem( 'Personality', JSON.stringify( Personality.all ) );
+  localStorage.setItem( 'Section', JSON.stringify( Section.all ) );
   window.location = '../result.html';
 
 }
