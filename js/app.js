@@ -147,14 +147,14 @@ for ( let i in SectionTitle ) {
   let tempOrder=[];
   for ( let j in zeroArray ) {
     tempArray.push( optionsText[index] );
+
     tempOrder.push( orderArray[index] );
     index++;
   }
   const SectionObject = new Section( i + 1, SectionTitle[i], tempArray, tempOrder,imagePath );
 }
-// localStorage.setItem( 'Personality', JSON.stringify( Personality.all ) );
-// localStorage.setItem( 'Section', JSON.stringify( Section.all ) );
-// *********************************************************************
+
+
 
 
 
