@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+
+
+main nav figure:hover{
+    
+    animation-play-state: paused;
+
+}
+
+
+main nav figure{
+    width: 160px;
+    float: left;
+  margin-top: 300px;
+  animation: wave  ease-in-out 0.5s infinite alternate;
+  transform-origin: center -20px;
+  
+}
+main nav figure img{
+    margin-top: 40px;
+    width: 80px;
+    border-radius: 100%;
+    
+}
+main figure figcaption{
+
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: small;
+}
+main figure a{
+    font-family:Montserrat ;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center;
+}
+@keyframes wave {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+  }
+  
