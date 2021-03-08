@@ -1,8 +1,10 @@
 let answersArray = [0, 0, 0, 0, 0, 0, 0, 0];
 let sectionNumber = 0;
+let progress = 0;
 
 function render( num ) {
-
+  let legendElement = document.querySelector( '.legend' );
+  legendElement.textContent = `Section ${num+1}`;
 
   let sectionHeaderElement = document.querySelector( '.sectionHeader' );
   sectionHeaderElement.textContent = Section.all[num].header;
@@ -11,7 +13,11 @@ function render( num ) {
   for ( let i = 0; i < optionLabel.length; i++ ) {
     optionLabel[i].textContent = Section.all[num].options[i];
   }
-
+  
+  let completedBar = document.querySelector( 'div.progress' );
+  completedBar.style.width = progress + '%';
+  let textBar = document.getElementById( 'completed_text' );
+  textBar.textContent = `${Math.round( progress )} %`;
 
 }
 
@@ -64,40 +70,40 @@ function gg( evt ) {
 }
 
 
-let progress = 0;
+
 // eslint-disable-next-line no-unused-vars
-function showMe() {
+function showMe(event) {
+// let targetCheck = event.target;
+//   let chboxs = document.getElementsByName( 'checkA' );
+//   console.log(targetCheck)
+//   let vis = 'none';
+//   for ( let i = 0; i < chboxs.length; i++ ) {
 
-  let chboxs = document.getElementsByName( 'checkA' );
-  let vis = 'none';
-  for ( let i = 0; i < chboxs.length; i++ ) {
+//     let iddiv = `ratingA${i + 1}`;
 
-    let iddiv = `ratingA${i + 1}`;
+//     let starsNo = `rateA${i + 1}`;
+//     let ele = document.getElementsByName( starsNo );
 
-    let starsNo = `rateA${i + 1}`;
-    let ele = document.getElementsByName( starsNo );
-
-    if ( chboxs[i].checked ) {
-      vis = 'inline-block';
-    } else {
-      vis = 'none';
-      answersArray[i] = 0;
-      for ( let j = 0; j < ele.length; j++ ) {
-        ele[j].checked = false;
-      }
-    }
-    document.getElementById( iddiv ).style.display = vis;
+//     if ( targetCheck.checked ) {
+//       vis = 'inline-block';
+    
+      
+//       answersArray[i] = 0;
+//       for ( let j = 0; j < ele.length; j++ ) {
+//         ele[j].checked = false;
+//       }
+    
+    
 
 
-  }
+//   }
 
+// }
 }
-
 // eslint-disable-next-line no-unused-vars
 function next() {
-
-
-
+  ;
+  progress += 100 / 7;
   let correctAnswer = checkAnswers();
   if ( correctAnswer && sectionNumber <= 6 ) {
 
@@ -105,11 +111,7 @@ function next() {
       render( sectionNumber + 1 );
     }
 
-    progress += 100 / 7;
-    let completedBar = document.querySelector( 'div.progress' );
-    completedBar.style.width = progress + '%';
-    let textBar = document.getElementById( 'completed_text' );
-    textBar.textContent = `${Math.ceil( progress )} %`;
+    window.location = '#completed_text'
 
     for ( let i = 0; i < 8; i++ ) {
 
@@ -149,7 +151,7 @@ function next() {
 
 
       }
-      document.getElementById( iddiv ).style.display = vis;
+      
     }
 
     sectionNumber++;
