@@ -1,0 +1,41 @@
+
+
+
+
+
+
+.defultBar{
+    background-color: rgb(238, 234, 229,0.6);
+    border-style: solid;
+  border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    border-width: 1px;
+   
+display: inline-block;
+    
+
+}
+.personalityPercent{
+    width: 0%;
+    background-color: #318787;
+    
+    height: 100%;
+    border-radius:4px;
+}
+.barDiv {
+    display: grid;
+    grid-template-columns: 100px 600px 100px;
+    text-align: center;
+   
+}
+.barDiv p {
+    margin: 0;
+}
+
+.allBarDiv{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+}
