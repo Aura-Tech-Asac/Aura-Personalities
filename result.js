@@ -28,11 +28,7 @@ result();
 localStorage.setItem( 'resultpersonality', JSON.stringify( personalityAll ) );
 function renderResult(){
   for( let i in personalityAll ){
-    let x = 'p' +i+1 +'_name';
-    console.log( typeof( x ) );
-    let y = `p${x}_bar`;
-    let z = `p${x}_percent_text`;
-    let BarTitleElement= document.querySelectorAll( '.barTitle p' );
+    let BarTitleElement= document.querySelectorAll( '.barTitle a p' );
 
     BarTitleElement[i].textContent=personalityAll[i].name;
 
