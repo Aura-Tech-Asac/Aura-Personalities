@@ -9,7 +9,8 @@ body{
 main{
   margin: 100px 0;
     display: grid;
-    grid-template-rows: 350px 100px 1fr ;
+    grid-template-rows: 400px 100px 1fr ;
+    gap: 20px;
 }
 .quizTips{
     display: grid;
@@ -19,36 +20,61 @@ main{
    
 }
 .tipsImage{
-    margin: 0 auto;
+  display: inherit;
+    margin:  auto;
     height: 100px;
-    width: 50px;
+    width: 100px;
+ 
 }
 .tips{
-    border-top: solid;
+    
     border-top-width: 20px;
     margin: 20px 30px;
     padding: 15px;
-    border-radius: 18px;
-    align-items: center;
-
+    
+    
+    
+    border-radius: 20px;
+    
+    
+    
+    border-bottom: 5px solid rgb(115, 141, 87);
+    border-right: 3px solid rgb(94, 192, 217, 0.4);
+    border-left: 3px solid rgb(229, 200, 42,0.4);
 }
+
+
+
 div.quizTips div:nth-child(1){
-border-color: #e5c82e;
+  border-top: 20px solid #e5c82e;
+}
+.sp1{
+  color:#e5c82e ;
+  font-weight: bold;
 }
 
 div.quizTips div:nth-child(2){
-  border-color: #728D56;
+  border-top: 20px solid #744d60;
+  }
+
+  .sp2{
+    color:#744d60 ;
+    font-weight: bold;
   }
 
   div.quizTips div:nth-child(3){
-    border-color: #51A9AB;
+    border-top: 20px solid #51A9AB
+    }
+    .sp3{
+      font-weight: bold;
+      color:#51A9AB ;
     }
 
 .completedBar{
     background-color: rgb(238, 234, 229,0.5);
     border-style: solid;
-  border-radius: 4px;
-    height: 17px;
+  border-radius: 15px;
+    height: 15px;
     width: 90%;
     margin: 0 auto;
     border-width: 1px;
@@ -59,10 +85,10 @@ display: inline-block;
 }
 .progress{
     width: 0%;
-    background-color: rgb(18, 124, 124);
+    background-color: #744d60;
     
     height: 100%;
-    border-radius:4px;
+    border-radius:15px;
 }
 
 .barSection{
@@ -73,15 +99,17 @@ display: inline-block;
 #completed_text{
     display: inline-block;
     margin: 0;
+    font-size: 24px;
+    font-family:'Open Sans' ;
 }
 .tipsP{
     width: 80%;
     margin: auto ;
     padding: 10px;
+    font-family:'Open Sans';
+    font-size: 30px;
 }
-legend{
-    border-style: solid;
-}
+
 
 .value1{
     height: 15px;
@@ -91,38 +119,57 @@ legend{
     display: inline-block;
   }
 fieldset{
-  background-color: rgb(240, 240, 240);
+  background-color: #e5e2e23f;
   border-style: solid;
   border-radius: 50px;
-  padding: 20px;
+  padding: 0;
+  text-align: center;
 }
 .sectionDiv{
-  background-color: rgb(228, 225, 225);
+  
   padding: 15px;
+  border-style: none;
 }
 .sectionIdea{
-  background-color: rgb(162, 206, 212);
+  background-color:rgba(207, 158, 158, 0.356);
   display: inline-block;
-  border-style: solid;
-  border-radius: 20px;
-  padding: 4px 10px;
+  border-radius: 0px;
   
+  padding: 4px 10px;
+  font-size: 120%;
+  width: 100%;
+  margin: 100px auto auto auto;
+  
+  
+}
+.sectionHeader{
+
+  font-family: 'Open Sans';
 }
 legend{
-  z-index: 2;
-  background-color:#3ab36ec7;
-  border-radius: 15px;
+  
+  
+    font-size: 35px;
+    color: rgb(248, 247, 247);
+    font-weight: bolder;
+    font-family: 'Montserrat';
+border-style: solid;
+background-color:#4d4b4b;
+width: 250px;
+height: 75px;
+padding:15px 18px;
+border-radius: 15px;
+border-width: 1px;
+border: none;
+
+
   
 }
+
+
+
  
-  span{
-    display:inline-block;
-    width:10px;
-    height:10px;
-    background:red;
-    position: absolute;
-    left:20px;
-  }
+
   .value1{
     height: 30px;
     width: 30px;
@@ -139,10 +186,12 @@ legend{
       display:inherit;
       clear: both;
       font-size: 27px;
-      cursor: pointer;
-      margin: 14px 0 9px 0 ;
+      width: 80%;
+      margin: 75px auto auto auto;
+      font-family: 'Open Sans';
   }
 
+  
 
   /* The Rate Style */
   .showcase{
@@ -166,12 +215,14 @@ legend{
   div.rating-system1 label{
     float:right;
     /* display:inline-block; */
-    width:20px;
-    height:5px;
-    background:#ccc;
-    margin:4px;
+    width:32px;
+    height:8px;
+    background:rgb(207, 158, 158);
+    margin:25px 10px;
+    ;
     position: relative;
     transition:all .3s;
+    cursor: pointer;
   }
   .rating-system1 label:before{
     content: '';
@@ -202,55 +253,58 @@ legend{
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
   } */ 
 .warningDiv{
-    background-color: rgba(236, 43, 75, 0.452);
-    color: rgb(29, 29, 77);
+    background-color: rgba(247, 138, 156, 0.342);
+  
     display: none;
-    padding: 0 10px;
+    
     height: 50px;
     border-style: solid;
     width: fit-content;
+    margin: 10px 0;
+    border-color: rgb(252, 4, 45);
+    border-width: 1px;
+    padding: 5px 15px;
 
 
 }
+html {
+  scroll-behavior: smooth;
+}
 
-.waning_P{
-  padding: auto;
-  margin: 0 20px;
+
+#waning_P{
+  color: rgb(15, 15, 109);
+  /* padding: 10px 0; */
+  
+ 
+  margin: auto;
+  font-family: 'Open Sans';
+  font-size: 24px;
+  
   
 }
 
-legend{
-  height: 50px;
-  width: 200px;
-  text-align: center;
+
+button{
+  width: 300px;
+  height: 75px;
   font-size: 40px;
   font-weight: bold;
-}
-button{
-  width: 400px;
-    height: 100px;
-    background: #f3f0f1;
-    position: relative;
-    background: #f3f0f1;
-    margin-bottom: 25px;
-    border-radius: 32px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.1s ease-in-out;
-    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
-        6px 6px 10px rgba(0, 0, 0, 0.2);
-      color: #6f6cde;
-&:hover {
+  margin:50px auto;
+  border-radius: 35px;
+  outline: none;
+  border-style: none;
+  transition-duration: 1000ms;
   
-        opacity: 0.3;
-        box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
-          6px 6px 10px rgba(0, 0, 0, 0.2);
-      
-&:active {
-        opacity: 1;
-        box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
-          inset 8px 8px 16px rgba(0, 0, 0, 0.1);
-        color: #79e3b6;
-      }
-    }
-    
+
+}
+
+button:hover{
+  background-color: rgba(74, 116, 93, 0.692);
+  
+  color: azure;
+  width: 350px;
+  height: 100px;
+  cursor: pointer;
+}
+
