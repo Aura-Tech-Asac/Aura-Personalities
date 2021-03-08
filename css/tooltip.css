@@ -26,8 +26,8 @@
     padding: 30px;
     border-radius: 10px;
     width: 90vw;
-    /* opacity: 0;
-    pointer-events: none; */
+    opacity: 0;
+    pointer-events: none;
     z-index: 2;
     max-width: 300px;
     border-top: 5px solid rgb(116, 77, 96) ;
@@ -70,6 +70,95 @@
     border-radius: 50%;
     animation: effect 1s ease-in-out infinite;
 }
+
+/* .tooltip.active .tooltip-content{
+
+    opacity: 1;
+    pointer-events: all;
+
+} */
+
+.tooltip.active .tooltip-content {
+    opacity: 1;
+    pointer-events: all;
+    display: block;
+
+}
+
+.tooltip-1 .pin{
+
+    left: 5%;
+    top: 60%;
+
+}
+
+.tooltip-2 .pin{
+
+    left: 15%;
+    top: 60%;
+
+}
+
+.tooltip-3 .pin{
+
+    left: 26%;
+    top: 60%;
+
+}
+
+.tooltip-4 .pin{
+
+    left: 35%;
+    top: 50%;
+
+}
+
+.tooltip-5 .pin{
+
+    left: 54%;
+    top: 50%;
+
+}
+
+.tooltip-6 .pin{
+
+    left: 62%;
+    top: 55%;
+
+}
+
+.tooltip-7 .pin{
+
+    left: 70%;
+    top: 60%;
+
+}
+
+.tooltip-8 .pin{
+
+    left: 93%;
+    top: 65%;
+
+}
+
+
+
+.tooltip button{
+
+    font-family: sans-serif;
+    border-radius: 5px;
+
+
+
+}
+
+.tooltip a:hover{
+
+    background-color: rgb(86, 172, 138)   ;
+}
+
+
+
 
 @keyframes effect {
 
