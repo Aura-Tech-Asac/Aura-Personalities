@@ -31,21 +31,21 @@
 
 
     </header>
-
+    
     <main>
         <div class='quizTips'>
         
             <div class="tips">
-               <img src="./images/quiz/number3.png" alt="" srcset=""  class="tipsImage">
-               <p class="tipsP">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet accusamus consectetur et numquam velit consequuntur sequi nulla voluptatem illo dolore, asperiores fugit ipsum eius! Id pariatur rem aperiam est odit?</p>
-            </div> 
+                <img src="./images/quiz/test-header-1.svg" alt="" srcset=""  class="tipsImage">
+               <p class="tipsP"> The test takes less than <span class="sp1">12 minutes</span> </p>
+             </div> 
             <div class="tips">
-                <img src="./images/quiz/number2.png" alt="" srcset=""  class="tipsImage">
-                <p class="tipsP">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet accusamus consectetur et numquam velit consequuntur sequi nulla voluptatem illo dolore, asperiores fugit ipsum eius! Id pariatur rem aperiam est odit?</p>
+                <img src="./images/quiz/divThreeImage.svg" alt="" srcset=""  class="tipsImage">
+                <p class="tipsP">The  test  contains   <span class="sp2">seven sections   </span>  and    <span class="sp2">eight options </span> for each section</p>
              </div>
             <div class="tips">
-                <img src="./images/quiz/number1.png" alt="" srcset=""  class="tipsImage">
-                <p class="tipsP">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet accusamus consectetur et numquam velit consequuntur sequi nulla voluptatem illo dolore, asperiores fugit ipsum eius! Id pariatur rem aperiam est odit?</p>
+                <img src="./images/quiz/divOneImage.svg" alt="" srcset=""  class="tipsImage">
+                <p class="tipsP">Answer <span class="sp3">honestly</span>  (even if you don't like the answer).</p>
              </div>
         
         </div>
@@ -98,7 +98,7 @@
                   
              
                   </div> 
-                
+                <hr>
                 <input type="checkbox" name="checkA" id="checkA2" class="single" onclick="showMe(event);"/>
                 <label for="checkA2" class="optionLabel"></label>
                 <div class="rating-system1" id ="ratingA2">
@@ -133,6 +133,7 @@
                     <label for="star1b"></label>
                   
             </div>
+            <hr>
                 <input type="checkbox" name="checkA" id="checkA3" class="single" onclick="showMe(event);"/>
                 <label for="checkA3" class="optionLabel"></label>
                 <div class="rating-system1" id ="ratingA3">
@@ -167,6 +168,7 @@
                     <label for="star1c"></label>
                   
             </div>
+            <hr>
                 <input type="checkbox" name="checkA" id="checkA4" class="single" onclick="showMe(event);"/>
                 <label for="checkA4" class="optionLabel"></label>
                 <div class="rating-system1" id ="ratingA4">
@@ -201,6 +203,7 @@
                     <label for="star1d"></label>
                   
             </div>
+            <hr>
                 <input type="checkbox" name="checkA" id="checkA5" class="single" onclick="showMe(event);"/>
                 <label for="checkA5" class="optionLabel"></label>
                 <div class="rating-system1" id ="ratingA5">
@@ -235,6 +238,7 @@
                     <label for="star1e"></label>
                   
             </div>
+            <hr>
                 <input type="checkbox" name="checkA" id="checkA6" class="single" onclick="showMe(event);"/>
                 <label for="checkA6" class="optionLabel"></label>
                 <div class="rating-system1" id ="ratingA6">
@@ -269,6 +273,7 @@
                     <label for="star1f"></label>
                   
             </div>
+            <hr>
                 <input type="checkbox" name="checkA" id="checkA7" class="single" onclick="showMe(event);"/>
                 <label for="checkA7" class="optionLabel"></label>
                 <div class="rating-system1" id ="ratingA7">
@@ -303,6 +308,7 @@
                     <label for="star1g"></label>
                   
             </div>
+            <hr>
             <input type="checkbox" name="checkA" id="checkA8" class="single" onclick="showMe(event);"/>
             <label for="checkA8" class="optionLabel"></label>
             <div class="rating-system1" id ="ratingA8">
@@ -338,9 +344,12 @@
               
         </div>
             </div>
+            <hr>
             
-        <div class='warningDiv'>   <p  id="waning_P">You should at least choose an one option for each section</p>           </div>
-            <button type="button" onclick="next(); " id='nextButton'>Next </button>
+        <div class='warningDiv'>   <p  id="waning_P">You must at least choose an one option for each section</p>           </div>
+            <div class="containerB">
+                <button type="button" onclick="next(); " id='nextButton'>Next >> </button> 
+            </div>
         </fieldset>
         
         </form>
