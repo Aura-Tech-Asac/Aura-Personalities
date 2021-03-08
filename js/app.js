@@ -106,6 +106,16 @@ let SectionTitle = [
   'If I’m suddenly given a difficult task with limited time and unfamiliar people',
   'With reference to the problems to which I am subject in working in groups',
 ];
+
+let imagePath=[
+  'https://placehold.it/100x100/ddd',
+  'https://placehold.it/100x100/ddd',
+  'https://placehold.it/100x100/ddd',
+  'https://placehold.it/100x100/ddd',
+  'https://placehold.it/100x100/ddd',
+  'https://placehold.it/100x100/ddd',
+  'https://placehold.it/100x100/ddd'];
+
 function Personality( name, shortcutName ) {
   this.name = name;
   this.value = 0;
@@ -121,12 +131,13 @@ for ( let index = 0; index < PersonalityShortcutName.length; index++ ) {
   const PersonalityObject = new Personality( PersonalityName[index], PersonalityShortcutName[index] );
 }
 Section.all = [];
-function Section( SectionNumber, header, userAnswer, options, order ) {
+function Section( SectionNumber, header, options, order ,imagePath ) {
   this.SectionNumber = SectionNumber;
   this.header = header;
   this.options = options;
   this.order = order;
   this.userAnswer = [];
+  this.imagePath = imagePath;
   Section.all.push( this );
 }
 let zeroArray = new Array( 8 ).fill( 0 );
@@ -136,12 +147,14 @@ for ( let i in SectionTitle ) {
   let tempOrder=[];
   for ( let j in zeroArray ) {
     tempArray.push( optionsText[index] );
-    tempOrder.push(orderArray[index]);
+
+    tempOrder.push( orderArray[index] );
     index++;
   }
-  const SectionObject = new Section( i + 1, SectionTitle[i], zeroArray, tempArray, tempOrder );
+  const SectionObject = new Section( i + 1, SectionTitle[i], tempArray, tempOrder,imagePath );
 }
-console.log( [5,[5,1,2]] );
+
+
 
 
 
