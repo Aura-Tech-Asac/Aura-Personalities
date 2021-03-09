@@ -6,7 +6,9 @@ function getData() {
   const dataComments =JSON.parse( localStorage.getItem( 'comment' ) );
   sectionAll = sectionData;
   personalityAll = personalityData;
-  commentsAll=dataComments;
+  if ( dataComments ){
+    commentsAll=dataComments;
+  }
 }
 let commentsAll=[];
 let sectionAll = [];
