@@ -11,30 +11,38 @@ This Page is linked to all the website pages */
 }
 
 body{
-    width: 90%;
-    margin: auto;
+   
+   margin:0;
     display: grid;
-    grid-template-rows: 100px calc(100vh-200px) 100px ;
+    grid-template-rows: 125px calc(100vh-225px) 100px ;
+    row-gap: 50px;
 }
 
 
 /* HEADER DESIGN */
 
 header{
-    display: flex;
+    width: 100%;
     justify-content: left;
     align-items: center;
     margin-top: 20px;
-    background-color: #FFFFFF;
-    height: 100px;
+    background-color: #ffffff;
+    height: 125px;
+    position:sticky;
+    top: -1%;
+    width: 100%;
+    z-index: 20;
     /* position: fixed; */
+}
+main{
+  width: 90%;
 }
 
 header nav ul {
     background-color: white;
     /* border-radius: 4px; */
     list-style: none;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     box-shadow: -7px 9px 17px 0px #00000017;
@@ -44,7 +52,7 @@ header nav ul {
     opacity: 0;
     pointer-events: none;
     transition: 0.5s ease;
-    padding: 20px;
+    padding: 156px 16px 3px 40px;
     background-color: rgb(86, 172, 138,0.4);
 
   }
@@ -62,10 +70,11 @@ header nav ul li :hover {
   }
 
 .icon {
-    position: absolute;
-    top: 50%;
+  position:absolute;
+    float: right;
+    top: 13%;
     transform: translateY(-50%);
-    right: -80px;
+    right: -60px;
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -76,27 +85,34 @@ header nav ul li :hover {
     background-size: 50%;
     cursor: pointer;
     box-shadow: 0px 0px 17px 0px #00000017;
-    transition: 0.5s ease transform;
+    transition: 1s ease transform;
     background-color: rgb(116, 77, 96, 0.4);
   }
 
 .icon.close {
+  position: absolute;
+    right: -70px;
+    top: 72px;
     transform: translateY(-50%) rotate(360deg);
     background-image: url(https://image.flaticon.com/icons/svg/748/748122.svg);
    
   }
  nav.show ul {
-    width: 600px;
-    height: 100px;
+    width: 200px;
+    height: 100vh;
     transform: translate(0px);
     opacity: 1;
     pointer-events: all;
-    border-radius: 20px;
+    border-top-left-radius: 75%;
+    position: absolute;
+    right: -77px;
+    top: -17px;
+    
   }
 nav {
-    position: absolute;
-    top: 10px;
-    right: 100px;
+  position: absolute;
+  top: -20%;
+  right: 5%;
   }
 
 @media only screen and (max-width: 768px) {
@@ -118,8 +134,9 @@ nav {
       right: -50px;
     }
     nav {
-      top: 10px;
-      right: 60px;
+      position: absolute;
+      top: -20%;
+      right: 5%;
     }
   }
 
@@ -135,21 +152,32 @@ nav {
 
  footer {
    
-    left: 0;
-    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 150px ;
     width: 100%;
     background-color: red;
-    color: white;
+    color:   rgb(72, 72, 85);
     text-align: center;
     height: 100px;
     background-color:  rgb(86, 172, 138,1);
 
  } 
+#foot_icons{
+  margin: 25px 15px 0 0 ;
+  letter-spacing: 4px;
+}
+.footerText p{
+  
+  margin: 0;
+  padding: 15px 0;
+  line-height: 30px;
+  font-size: 20px;
+}
 
  .float-text {
     display: inline-block;
     position: fixed;
-    right: 10px;
+    left: 10px;
     bottom: 10px;
     width: fit-content;
     background-color: rgb(116, 77, 96, 0.4);
@@ -172,10 +200,10 @@ nav {
     border: 2px solid white;
     overflow: hidden;
     bottom: 5px;
-    right: -100%;
+    left: -100%;
     padding: 30px;
     border-radius: 8px;
-    transition: 0.5s ease-in-out right;
+    transition: 0.5s ease-in-out left;
   }
   .float-card-info p {
     color: white;
@@ -202,6 +230,12 @@ nav {
     cursor: pointer;
     color: whitesmoke;
   }
+  .footerEmail{
+    
+    display: inline-block;
+    cursor: pointer;
+    color: whitesmoke;
+  }
   .float-card-info .icons a:hover {
     color: rgb(127, 127, 129);
   }
@@ -222,7 +256,7 @@ nav {
     cursor: pointer;
   }
   .float-card-info.active {
-    right: 5px;
+    left: 5px;
     bottom: 5px;
   }
   
@@ -248,8 +282,31 @@ nav {
   grid-template-rows: 100px minmax(calc(100vh - 90px) , 1fr) 50px;
   gap: 10px;
  }
+ .mainNav ul li {
+   display: inline-block;
+ }
 
 
 
+ header div ul li a {
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: black;
+  font-family:Montserrat ;
+}
+ .mainNav ul li a:hover {
+  color: #744D60;
+}
+.mainNav{
+  display: inline-block;
+  margin-left: 34px;
+  margin-top: 48px;
+  height: 125px;
+  width: 60%;
+  
+}
 
-
+.mainNav ul {
+  display: inline;
+}

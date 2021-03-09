@@ -2,12 +2,10 @@
     box-sizing: border-box;
 }
 
-body{
-    width: 90%;
-    margin: auto;
-}
+
 main{
-  margin: 100px 0;
+  margin: auto;
+  width: 90%;
     display: grid;
     grid-template-rows: 400px 100px 1fr ;
     gap: 20px;
@@ -306,5 +304,8 @@ button:hover{
   width: 350px;
   height: 100px;
   cursor: pointer;
+}
+hr{
+  width: 75%;
 }
 

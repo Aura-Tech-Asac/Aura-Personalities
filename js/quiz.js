@@ -19,6 +19,8 @@ function render( num ) {
   let textBar = document.getElementById( 'completed_text' );
   textBar.textContent = `${Math.round( progress )}%`;
 
+
+
 }
 
 let sectionDivv = document.querySelectorAll( 'div.rating-system1' );
@@ -120,6 +122,7 @@ function next() {
       render( sectionNumber + 1 );
     }
 
+
     window.location = '#completed_text';
 
     for ( let i = 0; i < 8; i++ ) {
@@ -172,7 +175,11 @@ function next() {
 
 
 
+    if ( sectionNumber === 6 ) {
+      document.getElementById( 'nextButton' ).innerHTML='View Result';
+      document.getElementById( 'nextButton' ).style.backgroundColor='#b3e5ef';
 
+    }
 
 
   }
