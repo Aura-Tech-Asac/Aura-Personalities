@@ -10,6 +10,11 @@ This Page is linked to all the website pages */
     box-sizing: border-box;
 }
 
+main{
+  width: 90%;
+  margin: auto;
+}
+
 body{
    
    margin:0;
@@ -163,8 +168,10 @@ nav {
 
  } 
 #foot_icons{
+
   margin: 25px 15px 0 0 ;
   letter-spacing: 4px;
+  
 }
 .footerText p{
   

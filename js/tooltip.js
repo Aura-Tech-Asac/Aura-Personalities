@@ -18,7 +18,7 @@ function contentPosition () {
     // const arrow = tooltip.querySelector( '.arrow' );
 
     content.style.left = pin.offsetLeft - content.offsetWidth/2 + 'px';
-    content.style.top= pin.offsetTop + 210 + 'px';
+    content.style.top= pin.offsetTop + 200 + 'px';
     // arrow.style.left = pin.offsetLeft - content.offsetLeft + pin.offsetWidth/2 + 'px';
 
 
