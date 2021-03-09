@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+.hero{
+    width: 80%;
+    margin-top: 20px;
+}
+.title {
+    float: right;
+    margin-top: 115px;
+    font-size: 40px;
+    color: grey;
+    font-weight: bolder;
+    font-family:  'Akaya Telivigala', cursive;
+    margin-right: 25px;
+    -webkit-animation: title 1s ease-in-out infinite alternate;
+    -moz-animation: title 1s ease-in-out infinite alternate;
+    animation: title 1s ease-in-out infinite alternate;
+  }
+  @keyframes title {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8F749C, 0 0 40px #8F749C, 0 0 50px #8F749C, 0 0 60px #8F749C, 0 0 70px #8F749C;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #E0DCE2, 0 0 40px #E0DCE2, 0 0 50px #E0DCE2, 0 0 60px #E0DCE2, 0 0 70px #E0DCE2, 0 0 80px #E0DCE2;
+    }
+  }
+/* .headd{
+    margin-left: 100px;
+    font-size: xx-large;
+    font-weight: 700;
+    color: grey;
+    text-shadow: 2px 2px 5px  #61BED6;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+} */
+.text{
+  font-family: "Open Sans", "Helvetica Neue", Arial;
+  color: #4D5564;
+    margin-left: 100px;
+    font-size: 24px;
+    line-height: 2;
+    display: grid;
+    width: 82%;
+}
+.list{
+    margin-left: 90px;
+    margin-top: 25px;
+    display: flex;
+    margin-right: 65px;
+    border-top: 5px solid rgb(116, 77, 96) ;
+    border-bottom: 5px solid rgb(115, 141, 87);
+  border-right: 3px solid rgb(94, 192, 217, 0.4) ;
+  border-left: 3px solid rgb(229, 200, 42,0.4) ;
+}
+.div3{
+  margin-left: 20px;
+  margin-right: 170px;
+  line-height: 1.5;
+  font-family: "Open Sans", "Helvetica Neue", Arial;
+  color: #4D5564;
+}
+.div1{
+    margin-right: 170px;
+    line-height: 1.5;
+    font-family: "Open Sans", "Helvetica Neue", Arial;
+    color: #4D5564;
+}
+.div2{
+    margin-right: 100px;
+    line-height: 1.5;
+    font-family: "Open Sans", "Helvetica Neue", Arial;
+    color: #4D5564;
+}
+.h3{
+    font-size: x-large;
+    font-weight: 700;
+    color: rgb(117, 116, 116);
+    text-shadow: 2px 2px 5px  #61BED6;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+ul li {
+    font-size: large;
+    text-transform: capitalize;
+}
+.h2{
+    margin-left: 100px;
+    margin-top: 30px;
+    font-size: xx-large;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+    color: grey;
+    text-shadow: 2px 2px 5px  #61BED6;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+.all{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 160px;
+}
+.imgg1{
+    width: 215px;
+    height: 300px;
+    margin-right: 100px;
+    border-radius: 20%;
+}
+.imgg2{
+    width: 215px;
+    height: 300px;
+    margin-right: 100px;
+    border-radius: 20%;
+}
+.imgg3{
+  width: 215px;
+  height: 300px;
+  border-radius: 20%;
+  margin-right: 100px;
+}
