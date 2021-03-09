@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <img class="logo" src="./images/logo.png" alt="">
+      <a href="./index.html"> <img class="logo" src="./images/logo.png" alt=""></a>
       <div class="mainNav">
           <ul>
               <li><a href="./index.html">Home</a></li>
@@ -24,7 +24,7 @@
               <li><a href="./p-monitor-evaluator.html">Monitor Evaluator</a></li>
               <li><a href="./p-team-worker.html">Team Worker</a></li>
               <li><a href="./p-shaper.html">Shaper</a></li>
-              <li><a href="./p-company-worker.html">Company Worker</a></li>
+              <li><a href="./p-finisher.html"">Finisher</a></li>
               <li><a href="./p-plant.html"> Plant</a></li>
               <li><a href="./p-chairperson.html">Chair Person</a></li>
               <li><a href="./p-resource-investigator.html">Resource Investigator</a></li>
@@ -135,12 +135,12 @@
         </div>
       </div>
       <form >
-        <h3>leave you'r review</h3>
-        <p style="display: inline; padding-right: 47px;">Name  </p> 
-        <input type="text" id="name" > <br></br>
-
-        <p style="display: inline;">comment </p>
-        <textarea name="" id="bodyText"  cols="100"  rows="5"></textarea> <br/></br>
+        <h3>Leave your review</h3>
+       <div class="nameDiv"><p style="display: inline; padding-right: 47px;">Name  </p> 
+        <input type="text" id="name" > <br></br></div> 
+<div class="commentDiv"><p style="display: inline;">comment </p>
+  <textarea name="" id="bodyText"  cols="100"  rows="5"></textarea> <br/></br></div>
+        
 
         <button type="button" onclick="setComment()" id="addComment">Add Comment</button>
 
