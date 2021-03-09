@@ -92,17 +92,71 @@ form{
   text-align: center;
 }
 h3{
-  font-size: 20px;
+  font-size: 36px;
   margin-block-start: 0em;
   text-transform: capitalize;
+  font-family: 'Open Sans';
 }
 form #name, form textarea{
   width: 500px;
 } 
-form p {
-  padding: 15px;
+form .commentDiv, form .nameDiv {
+  width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: baseline;
+    padding: 15px;
+}
+form div p {
+  padding-right: 35px;
+  width: 250px;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 24px;
+}
+form button{
+  width: 300px;
+  height: 75px;
+  font-size: 40px;
+  font-weight: bold;
+  margin:50px auto;
+  border-radius: 35px;
+  outline: none;
+  border-style: none;
+  transition-duration: 1000ms;
+  
+
+}
+#name{
+  height: 50px;
+  font-family: 'Open Sans';
+  padding: 20px;
+  font-size: 22px;
+}
+
+
+form button:hover{
+  background-color: rgba(74, 116, 93, 0.692);
+  
+  color: azure;
+  width: 350px;
+  height: 100px;
+  cursor: pointer;
+}
+#bodyText{
+  height: 130px;
+  font-family: 'Open Sans';
+  padding: 0 10px;
+  font-size: 18px;
 }
 /* #addComment{
   width: 100px;
   height: 50px;
 } */
+.mainNav {
+  display: inline-block;
+  margin-left: 34px;
+  margin-top: 36px;
+  height: 125px;
+  width: 60%;
+}
