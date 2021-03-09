@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
-
+body{
+    width: 85%;
+    margin: auto;
+}
 h1{
     font-family: "Montserrat";
     color: rgb(116, 77, 96, 1);
-
-    
+    text-align: center;
+    text-shadow: 1px 2px gray;
+    margin: 0;
+    margin-bottom: 100px;
+    font-size: 60px;
 }
+    
+
 
 span{
     color:rgb(127, 127, 129);
@@ -15,7 +23,7 @@ h2 {
     margin: 0;
     width: 140px;
     margin-top: 24px;
-    font-size: 18px;
+    font-size: 13px;
     font-family: "Montserrat";
 }
 
@@ -103,7 +111,7 @@ p{
     width: 450px;
 }
 
-.saja {
+.all {
     display: grid;
     grid-template-columns: 200px 1fr 500px;
     gap: 25px;
@@ -119,5 +127,197 @@ p{
 
 .third-bar-container{
     display: flex;
+}
+.first-resultOmar{
+    height:24px;
+    width:52%;
+    background-color: rgb(86, 172, 138,1);
+    border-radius: 5px;
+
+}
+
+.first-barOmar{
+    background-color: rgb(86, 172, 138,0.4);
+    width: 290px;
+    margin: 0 15px;
+    margin-top: 22px;
+    border-radius: 10px;
+    height: 24px;
+}
+.second-resultOmar{
+
+    height:24px;
+    width:18%;
+    background-color: rgb(15, 47, 55,1);
+    border-radius: 5px;
+}
+.second-barOmar{
+    background-color:rgb(15, 47, 55,0.4);
+    width: 290px;
+    margin: 0 15px;
+    margin-top: 22px;
+    border-radius: 10px;
+    height: 24px;
+}
+
+.third-resultOmar{
+    height:24px;
+    width:10%;
+    background-color: rgb(86, 172, 138,1);
+    border-radius: 5px;
+
+}
+
+.third-barOmar{
+    background-color:rgb(86, 172, 138,0.4);
+    width: 290px;
+    margin: 0 15px;
+    margin-top: 22px;
+    border-radius: 10px;
+    height: 24px;
+}
+.first-resultAnwar{
+    height:24px;
+    width:49%;
+    background-color: rgb(116, 77, 96,1);
+    border-radius: 5px;
+
+}
+
+.first-barAnwar{
+    background-color: rgb(116, 77, 96,0.4);
+    width: 290px;
+    margin: 0 15px;
+    margin-top: 22px;
+    border-radius: 10px;
+    height: 24px;
+}
+.second-resultAnwar{
+
+    height:24px;
+    width:32%;
+    background-color: rgb(15, 47, 55,1);
+    border-radius: 5px;
+}
+.second-barAnwar{
+    background-color:rgb(15, 47, 55,0.4);
+    width: 290px;
+    margin: 0 15px;
+    margin-top: 22px;
+    border-radius: 10px;
+    height: 24px;
+}
+
+.third-resultAnwar{
+    height:24px;
+    width:20%;
+    background-color: rgb(116, 77, 96,1);
+    border-radius: 5px;
+
+}
+
+.third-barAnwar{
+    background-color:rgb(116, 77, 96,0.4);
+    width: 290px;
+    margin: 0 15px;
+    margin-top: 22px;
+    border-radius: 10px;
+    height: 24px;
+}
+.first-resultMousa{
+    height:24px;
+    width:50%;
+    background-color: rgb(86, 172, 138,1);
+    border-radius: 5px;
+
+}
+
+.first-barMousa{
+    background-color: rgb(86, 172, 138,0.4);
+    width: 290px;
+    margin: 0 15px;
+    margin-top: 22px;
+    border-radius: 10px;
+    height: 24px;
+}
+.second-resultMousa{
+
+    height:24px;
+    width:24%;
+    background-color: rgb(116, 77, 96,1);
+    border-radius: 5px;
+}
+.second-barMousa{
+    background-color:rgb(116, 77, 96,0.4);
+    width: 290px;
+    margin: 0 15px;
+    margin-top: 22px;
+    border-radius: 10px;
+    height: 24px;
+}
+
+.third-resultMousa{
+    height:24px;
+    width:23%;
+    background-color: rgb(229, 200, 42,1) ;
+    border-radius: 5px;
+
+}
+
+.third-barMousa{
+    background-color:rgb(229, 200, 42,0.4) ;
+    width: 290px;
+    margin: 0 15px;
+    margin-top: 22px;
+    border-radius: 10px;
+    height: 24px;
+}
+.first-resultNouf{
+    height:24px;
+    width:55%;
+    background-color: rgb(86, 172, 138,1);
+    border-radius: 5px;
+
+}
+
+.first-barNouf{
+    background-color: rgb(86, 172, 138,0.4);
+    width: 290px;
+    margin: 0 15px;
+    margin-top: 22px;
+    border-radius: 10px;
+    height: 24px;
+}
+.second-resultNouf{
+
+    height:24px;
+    width:25%;
+    background-color:  rgb(15, 47, 55,1);
+    border-radius: 5px;
+}
+.second-barNouf{
+    background-color:rgb(15, 47, 55,0.4);
+    width: 290px;
+    margin: 0 15px;
+    margin-top: 22px;
+    border-radius: 10px;
+    height: 24px;
+}
+
+.third-resultNouf{
+    height:24px;
+    width:10%;
+    background-color: rgb(116, 77, 96,1);
+    border-radius: 5px;
+
+}
+
+.third-barNouf{
+    background-color:rgb(116, 77, 96,0.4);
+    width: 290px;
+    margin: 0 15px;
+    margin-top: 22px;
+    border-radius: 10px;
+    height: 24px;
 }
 
