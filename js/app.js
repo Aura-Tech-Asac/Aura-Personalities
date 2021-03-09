@@ -10,7 +10,12 @@ icon.addEventListener( 'click', () => {
   nav.classList.toggle( 'show' );
 } );
 
-
+function CommentSection( name, comment ) {
+  this.name = name;
+  this.comment = comment;
+  CommentSection.arr.push( this );
+}
+CommentSection.arr = [];
 // Dynamic Contact Us
 
 const touchButton = document.querySelector( '.float-text' );
