@@ -37,15 +37,6 @@
 }
 
 
-/* .tooltip-content .arrow{
-    position: absolute;
-    border: solid 10px transparent;
-    border-bottom-color: rgb(255,255,255);
-    top: 0;
-    left: 50%;
-    transform: translate(-50% , -100%);
-    
-} */
 
 .pin {
     position: absolute;
@@ -71,12 +62,14 @@
     animation: effect 1s ease-in-out infinite;
 }
 
-/* .tooltip.active .tooltip-content{
+@keyframes effect {
 
-    opacity: 1;
-    pointer-events: all;
+    0%{ transform: scale(0.5); opacity: 1;}
 
-} */
+    100%{ transform: scale(3); opacity: 0;} 
+}
+
+
 
 .tooltip.active .tooltip-content {
     opacity: 1;
@@ -99,12 +92,14 @@
 
 }
 
-.tooltip-3 .pin{
+.tooltip-5 .pin{
 
-    left: 26%;
-    top: 60%;
+    left: 25%;
+    top: 53%;
 
 }
+
+
 
 .tooltip-4 .pin{
 
@@ -113,17 +108,19 @@
 
 }
 
-.tooltip-5 .pin{
+.tooltip-3 .pin{
 
-    left: 54%;
-    top: 50%;
+    left: 43%;
+    top: 48%;
 
 }
 
+
+
 .tooltip-6 .pin{
 
-    left: 62%;
-    top: 55%;
+    left: 54%;
+    top: 45%;
 
 }
 
@@ -141,29 +138,263 @@
 
 }
 
+.content p {
+    font-family: 'Open Sans';
+    color: #5b5b5b;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
 
+.tooltip-1 h1{
 
-.tooltip button{
-
-    font-family: sans-serif;
-    border-radius: 5px;
-
+    font-family: 'Montserrat';
+    color: rgb(229, 200, 42) ;
 
 
 }
 
-.tooltip a:hover{
 
-    background-color: rgb(86, 172, 138)   ;
+.tooltip-1 a{
+
+    text-decoration: none;
+    font-family: 'Open Sans' ;
+    background-color:rgb(116, 77, 96) ;
+    padding: 10px;
+    border-radius: 5px 20px 5px;
+    color: white;
+    font-size: 20px;
+
+}
+
+.tooltip-1 a:hover{
+
+    border-radius: 20px 5px 20px;
+    background-color: rgb(115, 141, 87);
+
+}
+
+
+.tooltip-2 h1{
+
+    font-family: 'Montserrat';
+    color: rgb(116, 77, 96) ;
+
+
+}
+
+
+.tooltip-2 a{
+
+    text-decoration: none;
+    font-family: 'Open Sans' ;
+    background-color:rgb(115, 141, 87) ;
+    padding: 10px;
+    border-radius: 5px 20px 5px;
+    color: white;
+    font-size: 20px;
+
+}
+
+.tooltip-2 a:hover{
+
+    border-radius: 20px 5px 20px;
+    background-color: rgb(229, 200, 42) ;
+
+}
+
+.tooltip-3 h1{
+
+    font-family: 'Montserrat';
+    color: #27788C ;
+
+
+}
+
+
+.tooltip-3 a{
+
+    text-decoration: none;
+    font-family: 'Open Sans' ;
+    background-color:rgb(116, 77, 96) ;
+    padding: 10px;
+    border-radius: 5px 20px 5px;
+    color: white;
+    font-size: 20px;
+
+}
+
+.tooltip-3 a:hover{
+
+    border-radius: 20px 5px 20px;
+    background-color: rgb(115, 141, 87) ;
+
+}
+
+.tooltip-4 h1{
+
+    font-family: 'Montserrat';
+    color:  rgb(115, 141, 87)  ;
+
+
+}
+
+
+.tooltip-4 a{
+
+    text-decoration: none;
+    font-family: 'Open Sans' ;
+    background-color:#27788C  ;
+    padding: 10px;
+    border-radius: 5px 20px 5px;
+    color: white;
+    font-size: 20px;
+
+}
+
+.tooltip-4 a:hover{
+
+    border-radius: 20px 5px 20px;
+    background-color: rgb(229, 200, 42) ;
+
+}
+
+
+
+.tooltip-5 h1{
+
+    font-family: 'Montserrat';
+    color: rgb(94, 192, 217) ;
+
+
+}
+
+
+.tooltip-5 a{
+
+    text-decoration: none;
+    font-family: 'Open Sans' ;
+    background-color:rgb(116, 77, 96) ;
+    padding: 10px;
+    border-radius: 5px 20px 5px;
+    color: white;
+    font-size: 20px;
+
+}
+
+.tooltip-5 a:hover{
+
+    border-radius: 20px 5px 20px;
+    background-color: rgb(115, 141, 87) ;
+
 }
 
 
 
 
-@keyframes effect {
 
-    0%{ transform: scale(0.5); opacity: 1;}
 
-    100%{ transform: scale(3); opacity: 0;} 
+
+.tooltip-6 h1{
+
+    font-family: 'Montserrat';
+    color:  rgb(115, 141, 87)  ;
+
+
 }
+
+
+.tooltip-6 a{
+
+    text-decoration: none;
+    font-family: 'Open Sans' ;
+    background-color:#27788C ;
+    padding: 10px;
+    border-radius: 5px 20px 5px;
+    color: white;
+    font-size: 20px;
+
+}
+
+.tooltip-6 a:hover{
+
+    border-radius: 20px 5px 20px;
+    background-color: rgb(229, 200, 42) ;
+
+}
+
+
+.tooltip-7 h1{
+
+    font-family: 'Montserrat';
+    color: rgb(116, 77, 96) ;
+
+
+}
+
+
+.tooltip-7 a{
+
+    text-decoration: none;
+    font-family: 'Open Sans' ;
+    background-color:rgb(115, 141, 87) ;
+    padding: 10px;
+    border-radius: 5px 20px 5px;
+    color: white;
+    font-size: 20px;
+
+}
+
+.tooltip-7 a:hover{
+
+    border-radius: 20px 5px 20px;
+    background-color: rgb(229, 200, 42) ;
+
+}
+
+
+
+.tooltip-8 h1{
+
+    font-family: 'Montserrat';
+    color: #27788C ;
+
+
+}
+
+
+.tooltip-8 a{
+
+    text-decoration: none;
+    font-family: 'Open Sans' ;
+    background-color:rgb(229, 200, 42) ;
+    padding: 10px;
+    border-radius: 5px 20px 5px;
+    color: white;
+    font-size: 20px;
+
+}
+
+.tooltip-8 a:hover{
+
+    border-radius: 20px 5px 20px;
+    background-color: rgb(115, 141, 87) ;
+
+}
+
+#mainH{
+    font-family: 'Montserrat' ;
+    color: rgb(116, 77, 96) ;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
 

@@ -1,42 +1,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
 
+h1{
+    font-family: "Montserrat";
+    color: rgb(116, 77, 96, 1);
 
-main nav figure:hover{
-    
-    animation-play-state: paused;
-
-}
-
-
-main nav figure{
-    width: 160px;
-    float: left;
-  margin-top: 300px;
-  animation: wave  ease-in-out 0.5s infinite alternate;
-  transform-origin: center -20px;
-  
-}
-main nav figure img{
-    margin-top: 40px;
-    width: 80px;
-    border-radius: 100%;
     
 }
-main figure figcaption{
 
-    text-align: center;
-    padding-bottom: 30px;
-    font-size: small;
+span{
+    color:rgb(127, 127, 129);
 }
-main figure a{
-    font-family:Montserrat ;
-    margin-bottom: 30px;
-    position: relative;
-    text-align: center;
+h2 {
+    margin: 0;
+    width: 140px;
+    margin-top: 24px;
+    font-size: 18px;
+    font-family: "Montserrat";
 }
-@keyframes wave {
-    0% { transform: rotate(3deg); }
-    100% { transform: rotate(-3deg); }
-  }
-  
+
+h3{
+    text-align: center;
+    font-family: "Montserrat";
+    
+}
+
+p{
+    margin: 0;
+    margin-top: 24px;
+    font-family: "Montserrat" ;
+}
+.first-result{
+    height:24px;
+    width:52%;
+    background-color: rgb(86, 172, 138,1);
+    border-radius: 5px;
+
+}
+
+.first-bar{
+    background-color: rgb(86, 172, 138,0.4);
+    width: 290px;
+    margin: 0 15px;
+    margin-top: 22px;
+    border-radius: 10px;
+    height: 24px;
+}
+
+/* .first-bar-container{
+    display: grid;
+    grid-template-columns: 250px 600px 100px;
+    text-align: left;
+    column-gap: 5px;
+    margin-left: 45px;
+    align-items: center;
+} */
+
+.second-result{
+
+    height:24px;
+    width:18%;
+    background-color: rgb(15, 47, 55,1);
+    border-radius: 5px;
+
+
+}
+
+.second-bar{
+    background-color:rgb(15, 47, 55,0.4);
+    width: 290px;
+    margin: 0 15px;
+    margin-top: 22px;
+    border-radius: 10px;
+    height: 24px;
+}
+
+.third-result{
+
+    height:24px;
+    width:10%;
+    background-color: rgb(86, 172, 138,1);
+    border-radius: 5px;
+
+}
+
+.third-bar{
+    background-color:rgb(86, 172, 138,0.4);
+    width: 290px;
+    margin: 0 15px;
+    margin-top: 22px;
+    border-radius: 10px;
+    height: 24px;
+}
+
+.data img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.image img{
+    width: 450px;
+}
+
+.saja {
+    display: grid;
+    grid-template-columns: 200px 1fr 500px;
+    gap: 25px;
+}
+
+.first-bar-container{
+    display: flex;
+}
+
+.second-bar-container{
+    display: flex;
+}
+
+.third-bar-container{
+    display: flex;
+}
+

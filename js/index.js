@@ -1,4 +1,4 @@
-let clicks = 57;
+let clicks = 121;
 getData();
 
 
@@ -64,6 +64,3 @@ function animateValue( id, start, end, duration ) {
 }
 
 animateValue( 'value', 0, clicks, 3000 );
-
-
-

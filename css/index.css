@@ -102,8 +102,9 @@
   }
 
 #testBtn:hover{
-    background-color: rgb(116, 77, 96);
     border-radius: 20px 5px 20px;
+    background-color: rgb(116, 77, 96);
+
 
 
   }
@@ -141,36 +142,55 @@
     
   }  */
 
-  #testTakers{
+  /* #testTakers{
+
+    border-top: 5px solid rgb(116, 77, 96) ;
+    display: grid;
+    
+   
     border-radius: 60px 45px 30px 15px/15px 30px 45px 60px;
     margin-top: 68px;
     border: solid;
     width: 50%;
     margin-left: 267px;
     background-color: rgb(229, 200, 42,0.4);
+  } */
+/* 
+  .testTakersContainer{
+
+    display: grid;
+    grid-template-rows: calc(100vh-30px) 30px;
+
+  } */
+
+
+  .counterContent{
+    display: flex;
+    justify-content: center;
   }
 
-  #testTakers h1{
+ .testTakersContainer h1{
       text-align: center;
       font-weight: bold;
-      font-size: 40px;
-      font-family: 'Open Sans';
+      font-family: 'Montserrat';
       color: rgb(115, 141, 87);
+      font-size: 105px;
+      margin-left: 20px;
   }
 
-  #testTakers p{
+.testTakersContainer p{
     text-align: center;
     font-weight: bold;
     font-size: 25px;
-    font-family: 'Open Sans';
+    font-family: 'Montserrat';
     color: rgb(116, 77, 96);
+    margin-top: -65px;
 }
 
 .reviewsContainer{
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 gap: 20px;
-
 margin-top: 30px;
 margin-bottom: 30px;
 
@@ -219,6 +239,13 @@ margin-bottom: 30px;
   justify-self: center;
 }
 
+
+
+#reviewsH{
+  font-family: 'Montserrat' ;
+  color: #27788C;
+  padding-top: 50px;
+}
 
 
 
