@@ -17,25 +17,24 @@
   float: left;
   height: 400px;
   margin: 15px;
-  
 }
 
- .width {
-font-size: 20px;
-max-width:300px;
-overflow-wrap: break-word;
-word-wrap: break-word;
-text-align: center;
-margin:20px  auto;
-height: 100px;
-overflow: scroll;
+.width {
+  font-size: 20px;
+  max-width: 300px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-align: center;
+  margin: 20px auto;
+  height: 100px;
+  overflow: scroll;
 }
 
- h3 {
+h3 {
   text-align: center;
   font-family: "Montserrat";
   width: 100%;
-  color: rgb(116, 77, 96) ;
+  color: rgb(116, 77, 96);
 }
 
 img {
@@ -43,6 +42,6 @@ img {
   padding-top: 10px;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }

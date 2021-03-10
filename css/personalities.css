@@ -43,6 +43,7 @@
   width: 82%;
 }
 .list {
+  width: 81%;
   margin-left: 90px;
   margin-top: 25px;
   display: flex;
@@ -84,7 +85,6 @@ ul li {
   text-transform: capitalize;
 }
 .h2 {
-  margin-left: 100px;
   margin-top: 30px;
   font-size: xx-large;
   font-weight: 700;
@@ -100,7 +100,7 @@ ul li {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 162px;
-  margin-left: 129px;
+  /* margin-left: 129px; */
 }
 .imgg1 {
   width: 215px;

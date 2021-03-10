@@ -1,7 +1,3 @@
-// The App JS Contains global js code for all the website pages
-
-
-// Dynamic Header Script
 const icon = document.querySelector( '.icon' );
 const nav = document.querySelector( 'nav' );
 
@@ -27,25 +23,25 @@ close1.addEventListener( 'click', removeCard );
 
 let y;
 function moveCard( evt ) {
-  y =evt.target;
+  y = evt.target;
 
-  y.parentElement.nextElementSibling.style.display='block';
+  y.parentElement.nextElementSibling.style.display = 'block';
   console.log( 'this is y', y );
   card.classList.toggle( 'active' );
 
 }
 
 let x;
-function removeCard( event ){
+function removeCard( event ) {
 
   x = event.target;
   console.log( x );
-  x.parentElement.style.display='none';
+  x.parentElement.style.display = 'none';
 
 
 }
 // Creat Obejcts
-let orderArray = [5,7,4,2,8,3,1,6,1,2,5,6,3,7,4,8,2,8,3,4,7,5,6,1,7,3,6,1,4,8,5,2,6,1,7,3,5,2,8,4,4,7,2,8,6,1,3,5,3,6,8,5,1,4,2,7];
+let orderArray = [5, 7, 4, 2, 8, 3, 1, 6, 1, 2, 5, 6, 3, 7, 4, 8, 2, 8, 3, 4, 7, 5, 6, 1, 7, 3, 6, 1, 4, 8, 5, 2, 6, 1, 7, 3, 5, 2, 8, 4, 4, 7, 2, 8, 6, 1, 3, 5, 3, 6, 8, 5, 1, 4, 2, 7];
 let optionsText = ['I think I can quickly see and take advantage of new opportunities.',
   'I can work well with a very wide range of people.',
   'Producing ideas is one of my natural assets.',
@@ -112,7 +108,7 @@ let SectionTitle = [
   'With reference to the problems to which I am subject in working in groups',
 ];
 
-let imagePath=[
+let imagePath = [
   'https://placehold.it/100x100/ddd',
   'https://placehold.it/100x100/ddd',
   'https://placehold.it/100x100/ddd',
@@ -136,7 +132,7 @@ for ( let index = 0; index < PersonalityShortcutName.length; index++ ) {
   const PersonalityObject = new Personality( PersonalityName[index], PersonalityShortcutName[index] );
 }
 Section.all = [];
-function Section( SectionNumber, header, options, order ,imagePath ) {
+function Section( SectionNumber, header, options, order, imagePath ) {
   this.SectionNumber = SectionNumber;
   this.header = header;
   this.options = options;
@@ -149,17 +145,12 @@ let zeroArray = new Array( 8 ).fill( 0 );
 let index = 0;
 for ( let i in SectionTitle ) {
   let tempArray = [];
-  let tempOrder=[];
+  let tempOrder = [];
   for ( let j in zeroArray ) {
     tempArray.push( optionsText[index] );
 
     tempOrder.push( orderArray[index] );
     index++;
   }
-  const SectionObject = new Section( i + 1, SectionTitle[i], tempArray, tempOrder,imagePath );
+  const SectionObject = new Section( i + 1, SectionTitle[i], tempArray, tempOrder, imagePath );
 }
-
-
-
-
-
