@@ -35,7 +35,7 @@
 .text{
   font-family: "Open Sans", "Helvetica Neue", Arial;
   color: #4d5564;
-    margin-left: 100px;
+    margin-left: 90px;
     font-size: 24px;
     line-height: 2;
     display: grid;
@@ -53,27 +53,23 @@
 }
 .div3{
   margin-left: 20px;
-  margin-right: 170px;
   line-height: 1.5;
   font-family: "Open Sans", "Helvetica Neue", Arial;
   color: #4d5564;
-
+  width: 309px;
 
 }
 .div1{
-    margin-right: 170px;
     line-height: 1.5;
     font-family: "Open Sans", "Helvetica Neue", Arial;
     color: #4d5564;
-
-
+    width: 335px;
 }
 .div2{
-    margin-right: 100px;
     line-height: 1.5;
     font-family: "Open Sans", "Helvetica Neue", Arial;
     color: #4d5564;
-
+    width: 309px;
 
 }
 .h3{
@@ -82,6 +78,7 @@
     color: rgb(117, 116, 116);
     text-shadow: 2px 2px 5px  #61bed6;
     font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+    width: 309px;
 }
 ul li {
     font-size: large;
@@ -99,27 +96,27 @@ ul li {
     font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
 }
 .all{
-    display: flex;
-    margin-top: 30px;
-    margin-left: 195px;
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 162px;
+  margin-left: 129px;
 }
 .imgg1{
     width: 215px;
     height: 300px;
-    margin-right: 100px;
     border-radius: 20%;
 }
 .imgg2{
     width: 215px;
     height: 300px;
-    margin-right: 100px;
     border-radius: 20%;
 }
 .imgg3{
   width: 215px;
   height: 300px;
   border-radius: 20%;
-  margin-right: 100px;
 }
 .titleShaper {
     float: right;
@@ -149,9 +146,9 @@ ul li {
     color: #4fd39e;
     text-shadow: 2px 2px 5px  rgb(173, 170, 170);
     font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+    width: 309px;
 }
 .h2Shaper{
-    margin-left: 100px;
     margin-top: 30px;
     font-size: xx-large;
     font-weight: 700;
@@ -189,10 +186,10 @@ ul li {
     color: #51a9ab;
     text-shadow: 2px 2px 5px  rgb(173, 170, 170);
     font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+    width: 309px;
 
 }
 .h2Resource{
-    margin-left: 100px;
     margin-top: 30px;
     font-size: xx-large;
     font-weight: 700;
@@ -228,11 +225,12 @@ ul li {
     font-size: x-large;
     font-weight: 700;
     color: #4fd39e;
+    width: 309px;
     text-shadow: 2px 2px 5px  rgb(173, 170, 170);
     font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
   }
 .h2Plant{
-    margin-left: 100px;
+    /* margin-left: 100px; */
     margin-top: 30px;
     font-size: xx-large;
     font-weight: 700;
@@ -270,9 +268,9 @@ ul li {
     color: #8F749C;
     text-shadow: 2px 2px 5px  rgb(173, 170, 170);
     font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+    width: 240px;
 }
 .h2Monitor{
-    margin-left: 100px;
     margin-top: 30px;
     font-size: xx-large;
     font-weight: 700;

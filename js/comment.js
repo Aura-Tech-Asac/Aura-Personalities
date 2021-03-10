@@ -38,3 +38,9 @@ function render(){
 
 }
 render();
+
+home
+header image linke
+borger minue company mtkrera
+
+result 
