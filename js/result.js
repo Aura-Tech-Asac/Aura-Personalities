@@ -3,14 +3,14 @@
 function getData() {
   const sectionData = JSON.parse( localStorage.getItem( 'Section' ) );
   const personalityData = JSON.parse( localStorage.getItem( 'Personality' ) );
-  const dataComments =JSON.parse( localStorage.getItem( 'comment' ) );
+  const dataComments = JSON.parse( localStorage.getItem( 'comment' ) );
   sectionAll = sectionData;
   personalityAll = personalityData;
-  if ( dataComments ){
-    commentsAll=dataComments;
+  if ( dataComments ) {
+    commentsAll = dataComments;
   }
 }
-let commentsAll=[];
+let commentsAll = [];
 let sectionAll = [];
 let personalityAll = [];
 getData();
@@ -59,16 +59,13 @@ function setComment() {
   let name = document.getElementById( 'name' ).value;
   let comment = document.getElementById( 'bodyText' ).value;
   if ( name && comment ) {
-    const addComment= new CommentSection( name, comment );
+    const addComment = new CommentSection( name, comment );
     commentsAll.push( addComment );
     localStorage.setItem( 'comment', JSON.stringify( commentsAll ) );
-    window.location='./test.html';
+    window.location = './test.html';
 
   }
 
 
 }
-
-
-
 
